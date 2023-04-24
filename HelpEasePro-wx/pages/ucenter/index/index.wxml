@@ -10,34 +10,34 @@
 
   <view class='user_area'>
     <view class='user_row' bindtap='goOrder'>
-      <view class='user_row_left'>我的订单</view>
-      <van-icon class='user_row_right' name="arrow" />      
+      <view class='user_row_left'>我的揭榜单</view>
+      <van-icon class='user_row_right' name="arrow" />
     </view>
     <view class='user_column'>
       <view class='user_column_item' bindtap='goOrderIndex' data-index='1' data-route='/pages/ucenter/order/order'>
         <text class="user_column_item_badge" wx:if="{{order.unpaid != 0}}">{{order.unpaid}}</text>
-        <image class='user_column_item_image' src='/static/images/pendpay.png'>
+        <image class='user_column_item_image' src='/static/images/dyz.png'>
         </image>
-        <view class='user_column_item_text'>待付款</view>
+        <view class='user_column_item_text'>待援助</view>
       </view>
       <view class='user_column_item' bindtap='goOrderIndex' data-index='2' data-route='/pages/ucenter/order/order'>
         <text class="user_column_item_badge" wx:if="{{order.unship != 0}}">{{order.unship}}</text>
-        <image class='user_column_item_image' src='/static/images/send.png'></image>
-        <view class='user_column_item_text'>待发货</view>
+        <image class='user_column_item_image' src='/static/images/qz.png'></image>
+        <view class='user_column_item_text'>求助</view>
       </view>
       <view class='user_column_item' bindtap='goOrderIndex' data-index='3' data-route='/pages/ucenter/order/order'>
         <text class="user_column_item_badge" wx:if="{{order.unrecv != 0}}">{{order.unrecv}}</text>
-        <image class='user_column_item_image' src='/static/images/receive.png'></image>
-        <view class='user_column_item_text'>待收货</view>
+        <image class='user_column_item_image' src='/static/images/yzz.png'></image>
+        <view class='user_column_item_text'>援助中</view>
       </view>
       <view class='user_column_item' bindtap='goOrderIndex' data-index='4' data-route='/pages/ucenter/order/order'>
         <text class="user_column_item_badge" wx:if="{{order.uncomment != 0}}">{{order.uncomment}}</text>
-        <image class='user_column_item_image' src='/static/images/comment.png'></image>
-        <view class='user_column_item_text'>待评价</view>
+        <image class='user_column_item_image' src='/static/images/ywc.png'></image>
+        <view class='user_column_item_text'>已完成</view>
       </view>
       <view class='user_column_item' bindtap='goAfterSale'>
         <image class='user_column_item_image' src='/static/images/aftersale.png'></image>
-        <view class='user_column_item_text'>售后</view>
+        <view class='user_column_item_text'>服务</view>
       </view>
     </view>
   </view>
@@ -51,7 +51,7 @@
 
     <view class='user_column_item' bindtap='goCoupon'>
       <image class='user_column_item_image' src='/static/images/coupon.png'></image>
-      <view class='user_column_item_text'>优惠卷</view>
+      <view class='user_column_item_text'>互助卷</view>
     </view>
     <view class='user_column_item' bindtap='goCollect'>
       <image class='user_column_item_image' src='/static/images/collect.png'></image>
@@ -63,7 +63,7 @@
     </view>
     <view class='user_column_item' bindtap='goGroupon'>
       <image class='user_column_item_image' src='/static/images/group.png'></image>
-      <view class='user_column_item_text'>我的拼团</view>
+      <view class='user_column_item_text'>我的团互援</view>
     </view>
 
     <view class='user_column_item' bindtap='goAddress'>

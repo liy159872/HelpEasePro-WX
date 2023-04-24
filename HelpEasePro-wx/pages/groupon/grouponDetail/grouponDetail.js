@@ -27,7 +27,7 @@ Page({
   onShareAppMessage: function() {
     let that = this;
     return {
-      title: '邀请团购',
+      title: '邀请团互援',
       desc: '唯爱与美食不可辜负',
       path: '/pages/index/index?grouponId=' + this.data.id
     }

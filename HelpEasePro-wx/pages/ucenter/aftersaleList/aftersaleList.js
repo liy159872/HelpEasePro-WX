@@ -35,7 +35,7 @@ Page({
       this.getAftersaleList();
     } else {
       wx.showToast({
-        title: '没有更多售后了',
+        title: '没有更多服务了',
         icon: 'none',
         duration: 2000
       });

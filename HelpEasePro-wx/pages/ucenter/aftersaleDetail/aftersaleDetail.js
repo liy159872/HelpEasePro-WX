@@ -8,7 +8,7 @@ Page({
     orderGoods: [],
     aftersale: {},
     statusColumns: ['未申请', '已申请，待审核', '审核通过，待退款', '退款成功', '审核不通过，已拒绝'],
-    typeColumns: ['未收货退款', '不退货退款', '退货退款'],
+    typeColumns: ['未援助退款', '不援助退款', '援助退款'],
     fileList: []
   },
   onLoad: function (options) {

@@ -132,7 +132,7 @@ Page({
   },
   submitOrder: function() {
     if (this.data.addressId <= 0) {
-      util.showErrorToast('请选择收货地址');
+      util.showErrorToast('请选择求助地址');
       return false;
     }
     util.request(api.OrderSubmit, {

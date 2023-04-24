@@ -9,7 +9,7 @@ Page({
     aftersale: {
       pictures: []
     },
-    columns: ['未收货退款', '不退货退款', '退货退款'],
+    columns: ['未援助退款', '不援助退款', '援助退款'],
     contentLength: 0,
     fileList: []
   },
@@ -141,7 +141,7 @@ Page({
 
       if (res.errno === 0) {
         wx.showToast({
-          title: '申请售后成功',
+          title: '申请服务成功',
           icon: 'success',
           duration: 2000,
           complete: function () {

@@ -22,7 +22,7 @@
   <view class="aftersales">
     <navigator url="../aftersaleDetail/aftersaleDetail?id={{item.aftersale.orderId}}" class="aftersale" open-type="redirect" wx:for="{{aftersaleList}}" wx:key="id">
       <view class="h">
-        <view class="l">售后编号：{{item.aftersale.aftersaleSn}}</view>
+        <view class="l">服务编号：{{item.aftersale.aftersaleSn}}</view>
       </view>
       <view class="goods" wx:for="{{item.goodsList}}" wx:key="id" wx:for-item="gitem">
         <view class="img">

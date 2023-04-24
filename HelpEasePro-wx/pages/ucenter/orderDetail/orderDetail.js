@@ -93,7 +93,7 @@ Page({
 
     wx.showModal({
       title: '',
-      content: '确定要取消此订单？',
+      content: '确定要取消此揭榜？',
       success: function(res) {
         if (res.confirm) {
           util.request(api.OrderCancel, {
@@ -101,7 +101,7 @@ Page({
           }, 'POST').then(function(res) {
             if (res.errno === 0) {
               wx.showToast({
-                title: '取消订单成功'
+                title: '取消揭榜成功'
               });
               util.redirect('/pages/ucenter/order/order');
             } else {
@@ -119,7 +119,7 @@ Page({
 
     wx.showModal({
       title: '',
-      content: '确定要取消此订单？',
+      content: '确定要取消此揭榜？',
       success: function(res) {
         if (res.confirm) {
           util.request(api.OrderRefund, {
@@ -127,7 +127,7 @@ Page({
           }, 'POST').then(function(res) {
             if (res.errno === 0) {
               wx.showToast({
-                title: '取消订单成功'
+                title: '取消揭榜成功'
               });
               util.redirect('/pages/ucenter/order/order');
             } else {
@@ -145,7 +145,7 @@ Page({
 
     wx.showModal({
       title: '',
-      content: '确定要删除此订单？',
+      content: '确定要删除此揭榜？',
       success: function(res) {
         if (res.confirm) {
           util.request(api.OrderDelete, {
@@ -153,7 +153,7 @@ Page({
           }, 'POST').then(function(res) {
             if (res.errno === 0) {
               wx.showToast({
-                title: '删除订单成功'
+                title: '删除揭榜成功'
               });
               util.redirect('/pages/ucenter/order/order');
             } else {
@@ -171,7 +171,7 @@ Page({
 
     wx.showModal({
       title: '',
-      content: '确认收货？',
+      content: '确认援助？',
       success: function(res) {
         if (res.confirm) {
           util.request(api.OrderConfirm, {
@@ -179,7 +179,7 @@ Page({
           }, 'POST').then(function(res) {
             if (res.errno === 0) {
               wx.showToast({
-                title: '确认收货成功！'
+                title: '确认援助成功！'
               });
               util.redirect('/pages/ucenter/order/order');
             } else {

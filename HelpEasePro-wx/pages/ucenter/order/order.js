@@ -45,7 +45,7 @@ Page({
       this.getOrderList();
     } else {
       wx.showToast({
-        title: '没有更多订单了',
+        title: '没有更多揭榜了',
         icon: 'none',
         duration: 2000
       });

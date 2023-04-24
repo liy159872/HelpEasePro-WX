@@ -1,0 +1,95 @@
+<view class="about">
+  <view class="title">关于我们</view>
+  <view class="author-info">
+    <view class="author-avatar">
+      <image src="https://i.328888.xyz/2023/04/13/igOAcv.jpeg" mode="aspectFill"></image>
+    </view>
+    <view class="author-desc">
+      <view class="author-name">开发作者</view>
+      <view class="author-intro">一个热爱编程的年轻人。他的主要技术栈是Vue和SpringBoot，喜欢研究新技术。</view>
+    </view>
+  </view>
+  <view class="gf-info">
+    <view class="gf-avatar">
+      <image src="https://i.328888.xyz/2023/04/13/igOnyy.jpeg" mode="aspectFill"></image>
+    </view>
+    <view class="gf-desc">
+      <view class="gf-name">女友支持</view>
+      <view class="gf-intro">作者的女友是一个温柔善良的机长，一直支持着他的事业。在作者需要帮助的时候，她总是第一个出现。</view>
+    </view>
+  </view>
+  <view class="title">我们的生活</view>
+  <view class="video-wrapper">
+    <video class="video" autoplay="{{false}}" src="{{videoUrl}}" controls></video>
+  </view>
+</view>
+
+<script>
+const app = getApp()
+
+Page({
+  data: {
+    videoList: [],
+    windowWidth: wx.getSystemInfoSync().windowWidth - 30, //实时屏幕宽度
+    windowHeight: wx.getSystemInfoSync().windowHeight, //实时屏幕高度
+    playHeight: 0,
+    videoUrl: "../../HelpEasePro-Mobile/src/assets/zxmwife.mp4",
+  },
+  onLoad: function () {
+    this.setData({
+      playHeight: (3 / 4) * this.data.windowWidth
+    })
+    wx.request({
+      url: 'url/to/findallvideo',
+      success: (res) => {
+        if (res.data.status) {
+          this.setData({
+            videoList: res.data.data
+          })
+          console.log(res.data.data)
+        }
+      }
+    })
+  },
+  handleBack() {
+    wx.navigateBack()
+  }
+})
+</script>
+
+<style>
+.about {
+  padding: 20px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.author-info, .gf-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.author-avatar, .gf-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.author-avatar image, .gf-avatar image {
+  width: 100%;
+  height: 100%;
+}
+.author-desc, .gf-desc {
+  flex: 1;
+}
+.video-wrapper {
+  margin-top: 20px;
+}
+.video {
+  display: block;
+  margin: 0 auto;
+}
+</style>

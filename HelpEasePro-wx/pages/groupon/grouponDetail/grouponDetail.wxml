@@ -18,7 +18,7 @@
 
   <view class="menu-list-pro">
     <view class="h">
-      <view class="label">参与团购 ( {{joiners.length}}人)</view>
+      <view class="label">参与团互援 ( {{joiners.length}}人)</view>
       <view class="status">查看全部</view>
     </view>
     <view class="menu-list-item" wx:for-items="{{joiners}}" wx:key="id" data-id="{{item.id}}">
@@ -29,7 +29,7 @@
 
   <view class="order-goods">
     <view class="h">
-      <view class="label">商品信息</view>
+      <view class="label">求助信息</view>
     </view>
     <view class="goods">
       <view class="item" wx:for="{{orderGoods}}" wx:key="id">
@@ -50,16 +50,16 @@
     <view class="order-bottom">
       <view class="total">
         <view class="t">
-          <text class="label">商品合计：</text>
+          <text class="label">援助总收入：</text>
           <text class="txt">￥{{orderInfo.goodsPrice}}</text>
         </view>
         <view class="t">
-          <text class="label">商品运费：</text>
+          <text class="label">跑腿费：</text>
           <text class="txt">￥{{orderInfo.freightPrice}}</text>
         </view>
       </view>
       <view class="pay-fee">
-        <text class="label">商品实付：</text>
+        <text class="label">援助实收：</text>
         <text class="txt">￥{{orderInfo.actualPrice}}</text>
       </view>
     </view>

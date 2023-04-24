@@ -103,7 +103,7 @@
         },
         {
           "id": -1,
-          "name": "人气推荐",
+          "name": "能力榜推荐",
           "pathName": "pages/hotGoods/hotGoods",
           "query": ""
         },
@@ -145,13 +145,13 @@
         },
         {
           "id": -1,
-          "name": "购物车",
+          "name": "Help",
           "pathName": "pages/cart/cart",
           "query": ""
         },
         {
           "id": -1,
-          "name": "下单",
+          "name": "揭榜",
           "pathName": "pages/checkout/checkout",
           "query": ""
         },
@@ -169,31 +169,31 @@
         },
         {
           "id": -1,
-          "name": "我的订单列表",
+          "name": "我的揭榜单列表",
           "pathName": "pages/ucenter/order/order",
           "query": ""
         },
         {
           "id": -1,
-          "name": "我的订单详情",
+          "name": "我的揭榜单详情",
           "pathName": "pages/ucenter/orderDetail/orderDetail",
           "query": "id=1"
         },
         {
           "id": 22,
-          "name": "待评价的订单详情",
+          "name": "已完成的揭榜单详情",
           "pathName": "pages/ucenter/orderDetail/orderDetail",
           "query": "id=1"
         },
         {
           "id": -1,
-          "name": "购买商品评价",
+          "name": "完成求助评价",
           "pathName": "pages/commentPost/commentPost",
           "query": "orderId=2&type=0&valueId=1116011"
         },
         {
           "id": 22,
-          "name": "我的优惠券",
+          "name": "我的互助外快",
           "pathName": "pages/ucenter/couponList/couponList",
           "query": ""
         },
@@ -265,25 +265,25 @@
         },
         {
           "id": -1,
-          "name": "团购专区",
+          "name": "团互援专区",
           "pathName": "pages/groupon/grouponList/grouponList",
           "query": ""
         },
         {
           "id": -1,
-          "name": "选择优惠券",
+          "name": "选择互助外快",
           "pathName": "pages/ucenter/couponSelect/couponSelect",
           "query": ""
         },
         {
           "id": -1,
-          "name": "我的优惠券列表",
+          "name": "我的互助外快列表",
           "pathName": "pages/ucenter/couponList/couponList",
           "query": ""
         },
         {
           "id": -1,
-          "name": "优惠券列表",
+          "name": "互助外快列表",
           "pathName": "pages/coupon/coupon",
           "query": ""
         },
@@ -296,28 +296,28 @@
         },
         {
           "id": -1,
-          "name": "我的团购",
+          "name": "我的团互援",
           "pathName": "pages/groupon/myGroupon/myGroupon",
           "query": "",
           "scene": null
         },
         {
           "id": -1,
-          "name": "申请售后",
+          "name": "申请服务",
           "pathName": "pages/ucenter/aftersale/aftersale",
           "query": "id=2",
           "scene": null
         },
         {
           "id": -1,
-          "name": "售后列表",
+          "name": "服务列表",
           "pathName": "pages/ucenter/aftersaleList/aftersaleList",
           "query": "",
           "scene": null
         },
         {
           "id": -1,
-          "name": "售后详情",
+          "name": "服务详情",
           "pathName": "pages/ucenter/aftersaleDetail/aftersaleDetail",
           "query": "id=1",
           "scene": null
